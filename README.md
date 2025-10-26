@@ -44,3 +44,50 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+# Source
+- React Hook Form - Complete Tutorial (with Zod)
+- https://www.youtube.com/watch?v=cc_xmawJ8Kg
+
+-- npm install @hookform/resolvers
+
+
+Yesterday
+Hey dude!
+Hey hey! 😄 What’s up? You caught me in a great mood—ready to dive into whatever you’ve got in mind. Want to brainstorm something, learn a fun fact, or just chat?
+
+Could you please!.. Based on React-Hook-From create me a cheatsheet about all the methods and generate a complete example in React V18 how to apply React-hook-form in a Form.
+Here's your React Hook Form cheatsheet and a complete example using React 18! This covers the most essential methods and shows how to build a working form with validation and submission handling.
+
+🧠 React Hook Form Cheatsheet
+Here are the most commonly used methods from react-hook-form:
+
+https://copilot.microsoft.com/chats/2rcZC91eFGFsWnNwkA84V
+
+Method					Description
+useForm()				Initializes the form and returns methods like register, handleSubmit, formState, etc.
+register()			Connects input fields to the form state and validation rules.
+handleSubmit()	Wraps your submit handler to process and validate form data.
+formState				Provides form status like errors, isSubmitting, isValid, etc.
+watch()					Observes input changes in real-time.
+reset()					Resets the form to initial values or empty state.
+setValue()			Programmatically sets a field value.
+getValues()			Retrieves current form values.
+trigger()				Manually triggers validation for specific fields.
+setError()			Sets a custom error on a field.
+clearErrors()		Clears errors for specific fields.
+control					Used with controlled components (e.g., Controller for custom inputs).
+
+
+
+-- https://copilot.microsoft.com/chats/CFsDk2e15De1ujuxKQHua
+
+🧠 Axios Cheatsheet
+📦 What is Axios?
+Axios is a promise-based HTTP client for the browser and Node.js.. It simplifies making HTTP requests and handling responses.
+
+
+
+# Learn Zod In 30 Minutes
+- https://www.youtube.com/watch?v=L6BE-U3oy80
