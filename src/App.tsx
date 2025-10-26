@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 // import './index.css';
@@ -6,8 +6,19 @@ import ContactFormZod from './Forms-resolvers-zod/ContactFormZod';
 import ContactForm from './Forms/ContactForm';
 import { MuiLoginForm } from './MuiLoginForm/MuiLoginForm';
 
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { TransackQuery } from './TransackQuery/TransackQuery';
+const queryClient = new QueryClient({
+	defaultOptions: {
+		queries: {
+			refetchOnWindowFocus: false,
+		}
+	}
+});
+
 
 function App() {
+	const [showDemo, setShowDemo] = useState(true);
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -30,7 +41,11 @@ function App() {
       <div className="w-full max-w-md">
 				{/* <ContactForm /> */}
         {/* <ContactFormZod /> */}
-				<MuiLoginForm />
+				{/* <MuiLoginForm /> */}
+				<QueryClientProvider client={queryClient}>
+					<button onClick={() => setShowDemo(!showDemo)}>Toggle Demo</button>
+					<TransackQuery />
+				</QueryClientProvider>
       </div>
 		</div>
   );
