@@ -91,3 +91,6 @@ Axios is a promise-based HTTP client for the browser and Node.js.. It simplifies
 
 # Learn Zod In 30 Minutes
 - https://www.youtube.com/watch?v=L6BE-U3oy80
+
+# installing Angular Material
+- npm i @mui/material @emotion/react @emotion/styled

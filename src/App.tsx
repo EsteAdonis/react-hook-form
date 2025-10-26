@@ -1,9 +1,11 @@
 import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
-import './index.css';
+// import './index.css';
 import ContactFormZod from './Forms-resolvers-zod/ContactFormZod';
 import ContactForm from './Forms/ContactForm';
+import { MuiLoginForm } from './MuiLoginForm/MuiLoginForm';
+
 
 function App() {
   return (
@@ -26,8 +28,9 @@ function App() {
 		<div className="min-h-screen flex flex-col items-center justify-center bg-background-800">
 			<h1 className="text-4xl font-bold text-primary-500 mb-8">Hello, Tailwind CSS!</h1>
       <div className="w-full max-w-md">
-				<ContactForm />
+				{/* <ContactForm /> */}
         {/* <ContactFormZod /> */}
+				<MuiLoginForm />
       </div>
 		</div>
   );
