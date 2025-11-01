@@ -8,6 +8,7 @@ import { MuiLoginForm } from './MuiLoginForm/MuiLoginForm';
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { TransackQuery } from './TransackQuery/TransackQuery';
+import LifecycleDemo from './Lifecycle/Lifecycle';
 const queryClient = new QueryClient({
 	defaultOptions: {
 		queries: {
@@ -42,10 +43,11 @@ function App() {
 				{/* <ContactForm /> */}
         {/* <ContactFormZod /> */}
 				{/* <MuiLoginForm /> */}
-				<QueryClientProvider client={queryClient}>
+				{/* <QueryClientProvider client={queryClient}>
 					<button onClick={() => setShowDemo(!showDemo)}>Toggle Demo</button>
 					<TransackQuery />
-				</QueryClientProvider>
+				</QueryClientProvider> */}
+				<LifecycleDemo />
       </div>
 		</div>
   );

@@ -22,7 +22,6 @@ export const TransackQuery = () => {
 		}
 	})
 
-
 	if (isLoading) {
 		return <div>Loading...</div>
 	}

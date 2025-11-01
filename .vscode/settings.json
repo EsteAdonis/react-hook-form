@@ -17,6 +17,6 @@
   "terminal.integrated.mouseWheelScrollSensitivity": 6,
 	"terminal.integrated.fontSize": 15,
 	"editor.linkedEditing": true,
-	"chat.fontSize": 15,
+	"chat.fontSize": 16,
 	"editor.cursorBlinking": "expand"
 }
