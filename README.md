@@ -94,3 +94,6 @@ Axios is a promise-based HTTP client for the browser and Node.js.. It simplifies
 
 # installing Angular Material
 - npm i @mui/material @emotion/react @emotion/styled
+
+
+-- npm install @reduxjs/toolkit
