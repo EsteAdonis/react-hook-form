@@ -21,48 +21,23 @@ import { Header } from './components/Header';
 import { Email } from './components/Email';
 import { useDispatch } from 'react-redux';
 import { addUser } from './Redux/Store/userSlice';
+import UserThunkList from './Features/UserThunk/UserThunkList';
 
 function App() {
 	const dispatch = useDispatch();
 
-	useEffect(() => {
-		fetch("https://jsonplaceholder.typicode.com/users/1")
-		.then(response => response.json())
-		.then( data => dispatch(addUser(data)) )
-		.catch(error => console.log(error))
-	}, []);
+	// useEffect(() => {
+	// 	fetch("https://jsonplaceholder.typicode.com/users/1")
+	// 	.then(response => response.json())
+	// 	.then( data => dispatch(addUser(data)) )
+	// 	.catch(error => console.log(error))
+	// }, []);
 	
-	// const [showDemo, setShowDemo] = useState(true);
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.tsx</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
 		<div className="min-h-screen flex flex-col items-center justify-center bg-background-800">
 			<h1 className="text-4xl font-bold text-primary-500 mb-8">Hello, Tailwind CSS!</h1>
       <div className="w-full max-w-md">
-				{/* <ContactForm /> */}
-        {/* <ContactFormZod /> */}
-				{/* <MuiLoginForm /> */}
-				{/* <QueryClientProvider client={queryClient}>
-					<button onClick={() => setShowDemo(!showDemo)}>Toggle Demo</button>
-					<TransackQuery />
-				</QueryClientProvider> */}
-				{/* <LifecycleDemo /> */}
-				<Header />
-				<Email />
+				<UserThunkList />
       </div>
 		</div>
   );

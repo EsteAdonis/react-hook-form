@@ -97,3 +97,25 @@ Axios is a promise-based HTTP client for the browser and Node.js.. It simplifies
 
 
 -- npm install @reduxjs/toolkit
+
+
+-- Project but applying Thunk
+
+🧱 Project Setup
+1. Initialize the Project
+bash
+npx create-react-app redux-crud-thunk --template typescript
+cd redux-crud-thunk
+npm install @reduxjs/toolkit react-redux axios
+
+src/
+├── app/
+│   └── store.ts
+├── features/
+│   └── user/
+│       ├── userSlice.ts
+│       ├── userAPI.ts
+│       ├── UserForm.tsx
+│       └── UserList.tsx
+├── App.tsx
+└── index.tsx
