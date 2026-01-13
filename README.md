@@ -119,3 +119,7 @@ src/
 │       └── UserList.tsx
 ├── App.tsx
 └── index.tsx
+
+-- [baseline-browser-mapping] The data in this module is over two months old.
+-- To ensure accurate Baseline data, please update:
+-- : npm i baseline-browser-mapping@latest -D

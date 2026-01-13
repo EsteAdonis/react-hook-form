@@ -35,7 +35,7 @@ const UserForm: React.FC<Props> =({ initialData, onSuccess}) => {
 	useEffect(() => {
 		setFormData({id, username, name, email});
 		console.log({id, username, name, email});
-	}, [id])
+	}, [id, username, name, email])
 	
 	return (
 		<form onSubmit={handleSubmit}>
