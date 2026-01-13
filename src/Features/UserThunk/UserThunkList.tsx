@@ -24,7 +24,7 @@ const UserThunkList: React.FC = () => {
 			<ul>
 				{data.map(user => (
 					<li key={user.id}>
-           	<span style={{width: "1600px"}}><strong>{user.username}</strong> ({user.email})</span>
+           	<span style={{width: "1200px"}}><strong>{user.username}</strong> ({user.email})</span>
             <button onClick={() => setEditingUser(user)}>Edit</button>
             <button onClick={() => handleDelete(user.id)}>Delete</button>
 					</li>

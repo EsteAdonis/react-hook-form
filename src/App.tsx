@@ -22,6 +22,9 @@
 // import { useDispatch } from 'react-redux';
 // import { addUser } from './Redux/Store/userSlice';
 import UserThunkList from './Features/UserThunk/UserThunkList';
+// import ContactFormZod from './Forms-resolvers-zod/ContactFormZod';
+// import ContactForm from './Forms/ContactForm';
+// import { TransackQuery } from './TransackQuery/TransackQuery';
 
 function App() {
 	// const dispatch = useDispatch();
@@ -36,8 +39,11 @@ function App() {
   return (
 		<div className="min-h-screen flex flex-col items-center justify-center bg-background-800">
 			<h1 className="text-4xl font-bold text-primary-500 mb-8">Hello, Tailwind CSS!</h1>
-      <div className="w-full max-w-md">
+      <div className="w-full max-w-lg">
 				<UserThunkList />
+				{/* <ContactForm /> */}
+				{/* <ContactFormZod /> */}
+				{/* <TransackQuery /> */}
       </div>
 		</div>
   );

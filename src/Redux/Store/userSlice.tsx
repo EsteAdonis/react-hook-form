@@ -10,7 +10,7 @@ const initialState: IUser = {
 export const userSlice = createSlice({
 	name: 'user',
 	initialState,
-	reducers: {
+	reducers: { 
 		addUser: (state, action) => { 
 			const {name, username, email} = action.payload;
 			state.name = name;

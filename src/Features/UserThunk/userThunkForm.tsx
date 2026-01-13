@@ -19,6 +19,7 @@ const UserForm: React.FC<Props> =({ initialData, onSuccess}) => {
 
 	const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
 		setFormData({...formData, [e.target.name]: e.target.value });
+		console.log('FormData: ', formData);
 	};
 
 	const handleSubmit = (e: React.FormEvent) => {
@@ -38,8 +39,8 @@ const UserForm: React.FC<Props> =({ initialData, onSuccess}) => {
 	
 	return (
 		<form onSubmit={handleSubmit}>
-			<input name="user" value={formData.username} onChange={handleChange} placeholder="User Id" required/>
-			<input name="username" value={formData.name} onChange={handleChange} placeholder="Username" required />
+			<input name="name" value={formData.name} onChange={handleChange} placeholder="name" required/>
+			<input name="username" value={formData.username} onChange={handleChange} placeholder="Username" required />
 			<input name="email" value={formData.email} onChange={handleChange} placeholder="Email" required />
 			<button type="submit">{initialData ? 'Update' : 'Add'} User </button>
 		</form>

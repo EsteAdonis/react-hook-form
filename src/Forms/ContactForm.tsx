@@ -126,7 +126,7 @@ const ContactForm: React.FC = () => {
 							{ required: "Email is required", 
 								pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Email is not valid" },
 								validate: async (fieldValue) => {
-									const response = await fetch(`https://jsonplaceholder.typicode.com/users?eamil=${fieldValue}`);
+									const response = await fetch(`https://jsonplaceholder.typicode.com/users?email=${fieldValue}`);
 									const data = await response.json();
 									return data.length === 0 || 'Email already exists';
 								}

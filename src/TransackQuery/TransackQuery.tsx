@@ -9,6 +9,7 @@ export const TransackQuery = () => {
 	const [search, setSearch] = useState("");
 	const queryClient = useQueryClient();
 
+
 	const { data: todos, isLoading } = useQuery({
 		queryFn: () => fetchTodos(search),
 		queryKey: ["todos", { search }],
@@ -45,5 +46,3 @@ export const TransackQuery = () => {
 		</div>
 	)
 }
-
-
