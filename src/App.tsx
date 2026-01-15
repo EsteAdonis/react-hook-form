@@ -21,6 +21,8 @@
 // import { Email } from './components/Email';
 // import { useDispatch } from 'react-redux';
 // import { addUser } from './Redux/Store/userSlice';
+import ExternalComponent from './Features/UserThunk/ContextApi/ExternalComponent';
+import MyProvider  from './Features/UserThunk/ContextApi/MyProvider';
 import UserThunkList from './Features/UserThunk/UserThunkList';
 // import ContactFormZod from './Forms-resolvers-zod/ContactFormZod';
 // import ContactForm from './Forms/ContactForm';
@@ -44,6 +46,7 @@ function App() {
 				{/* <ContactForm /> */}
 				{/* <ContactFormZod /> */}
 				{/* <TransackQuery /> */}
+				<MyProvider />
       </div>
 		</div>
   );

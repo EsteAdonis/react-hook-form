@@ -123,3 +123,9 @@ src/
 -- [baseline-browser-mapping] The data in this module is over two months old.
 -- To ensure accurate Baseline data, please update:
 -- : npm i baseline-browser-mapping@latest -D
+
+-- Context API
+-- The Context API in React is a built-in feature that enables you to share state or data globally across components without manually passing props through every level of the component tree—a problem known as prop drilling. It consists of two main parts: a Provider and a Consumer.
+
+-- The Provider component (createContext) wraps the part of the app where data needs to be accessible and holds the shared state.
+-- The Consumer (or the useContext hook in functional components) allows any component to access that state directly, regardless of its depth in the component hierarchy.
