@@ -21,7 +21,7 @@ function MyProvider() {
 
 	return (
 		<div className="box">
-			<h1>My Provider - Adonis Dionisio</h1>
+			<h1>My Provider - Adonis Dionisio Prometeo Eris</h1>
 			 <MyOwnContext.Provider value={{username, setUsername, setShowProfile}}>  {/* Sharing the variable and setters */}
 				{showProfile ? <Profile /> : <Login />}
 				{showProfile && <ExternalComponent /> }
